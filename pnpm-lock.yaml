@@ -24,6 +24,9 @@ importers:
       sqlite3:
         specifier: ^5.1.7
         version: 5.1.7
+      ufo:
+        specifier: ^1.6.1
+        version: 1.6.1
 
 packages:
 
