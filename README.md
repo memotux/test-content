@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Nuxt Content AWS Amplify Manual Deploy Issue
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+When run `nuxt generate` in local environment, `sql_dump` file is prerended without a extension. If you upload this statics files to AWS Amplify `sql_dump` file will give a 404 code.
 
 ## Setup
 
@@ -20,56 +20,24 @@ yarn install
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
 ## Production
 
 Build the application for production:
 
 ```bash
 # npm
-npm run build
+npm run generate
 
 # pnpm
-pnpm build
+pnpm generate
 
 # yarn
-yarn build
+yarn generate
 
 # bun
-bun run build
+bun run generate
 ```
 
-Locally preview production build:
+Upload static files (`.output/public`) to AWS Amplify with manual deploy.
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+You can test the result in

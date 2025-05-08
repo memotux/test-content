@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const skip = ref(0)
-const { data, pending, error } = await useAsyncData(
+const { data, status, error } = await useAsyncData(
   'home',
   () => queryCollection('content').skip(skip.value).first(),
   {
@@ -19,13 +19,17 @@ if (error.value) {
 
 <template>
   <h1>Test Content</h1>
-  <article v-if="!pending && data">
+  <article v-if="status === 'success' && data">
     <header>
       <h1>{{ data.title }}</h1>
     </header>
     <ContentRenderer :value="data" />
   </article>
+  <div v-else>
+    <h2>Status: {{ status }}</h2>
+    <pre>{{ error }}</pre>
+  </div>
   <footer>
-    <button @click="skip--">Anterior</button><button @click="skip++">Siguiente</button>
+    <button @click="skip--">About</button><button @click="skip++">Post</button>
   </footer>
 </template>
