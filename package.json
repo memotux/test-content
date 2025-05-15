@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "AWS_APP_ID=123456 AWS_AMPLIFY_DEPLOYMENT_ID=123456 nuxt generate",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
