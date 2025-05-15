@@ -435,7 +435,7 @@ packages:
     hasBin: true
 
   '@nuxt/content@file:nuxt-content-3.5.1.tgz':
-    resolution: {integrity: sha512-xw7v8c+evHmiaVcD8a3VePv1XUXzxmLMfP0L7IWdHP11y+yzd/VBHx6vk2TvPnk4ls/VEw5bLH9maSXLjO9s1g==, tarball: file:nuxt-content-3.5.1.tgz}
+    resolution: {integrity: sha512-ZOQe5B1HUdzBZl2a9curq4j6bQGKDIqmMUgNQzh2Va3RBJElwBPFAYk/ow06RetYUbxrfZd2oJUj1amOREZ3vg==, tarball: file:nuxt-content-3.5.1.tgz}
     version: 3.5.1
     peerDependencies:
       '@electric-sql/pglite': '*'
